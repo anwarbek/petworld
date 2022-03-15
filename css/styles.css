@@ -27,8 +27,15 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
+} 
 
+/* BUTTON */
+.button {
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3366FF;
+}
 
 /* CONTAINER */
 .container {
@@ -44,4 +51,73 @@ img {
 /* MAIN_CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* HEADER */
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+    margin: 0 auto;
+}
+
+.site-logo-img {
+  display: flex;
+  width: 154px;
+  height: 35px;
+}
+
+.reg-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singup {
+  padding: 0;
+  margin: 0;
+  color: #2D2D2D;
+  text-decoration: none;
+}
+
+.button-login {
+  padding: 11px 50px;
+  margin-left: 30px;
+}
+
+.person-reg {
+  display: none;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #3366FF;
+}
+
+.person-reg-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 550px) {
+  .header-item {
+    padding: 22.5px 0;
+  }
+  .reg-user {
+    display: none;
+  }
+  .person-reg {
+    display: block;
+  }
 }
