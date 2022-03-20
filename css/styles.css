@@ -153,12 +153,36 @@ img {
   opacity: 0.5;
 }
 
-
 .hero-img {
   width: 500px;
   height: 460px;
   border-radius: 10px;
 }
+
+
+/* VIDEO-BLOCK */
+.video-block {
+  padding: 70px 0px;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 765px;
+  height: 460px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video [poster] {
+  width: 765px;
+  height: 460px;
+}
+
 
 
 @media 
@@ -173,8 +197,44 @@ only screen and (                min-resolution: 2dppx) {
 
 
 /* RESPONSIVENESS */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1020px) {
+  
+  /* HERO */
+  .hero {
+    padding: 50px 0;
+  }
+  
+  .hero-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+}
+@media only screen and (max-width: 780px) {
+  
+  /* VIDEO-BLOCK */
+  .video-block {
+    padding: 54px 0px;
+  }
+  
+  .video-item video {
+    width: 650px;
+    height: 390px;
+  }
+}
 
+@media only screen and (max-width: 550px) {
+  
   /* HEADER */
   .header {
     padding: 22.5px 0;
@@ -214,11 +274,6 @@ only screen and (                min-resolution: 2dppx) {
   .hero-heading {
     font-size: 50px;
     line-height: 60px;
-    text-align: center;
-  }
-  
-  .hero-text {
-    text-align: center;
   }
   
   .button-orange {
@@ -233,34 +288,13 @@ only screen and (                min-resolution: 2dppx) {
     border-radius: 6.5px;
   }
   
-}
-
-@media only screen and (max-width: 1020px) {
-  
-  .hero {
-    padding: 50px 0;
+  /* VIDEO-BLOCK */
+  .video-block {
+    padding: 54px 0px;
   }
   
-  .hero-item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
+  .video-item video {
+    width: 320px;
+    height: 190px;
   }
-  
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-  
-  .hero-heading {
-    text-align: center;
-  }
-  
-  .hero-text {
-    text-align: center;
-  }
-  
 }
