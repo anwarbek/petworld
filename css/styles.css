@@ -171,7 +171,7 @@ img {
   justify-content: center;
 }
 
-.video {
+.video-item video {
   width: 765px;
   height: 460px;
   border-radius: 10px;
@@ -184,6 +184,30 @@ img {
 }
 
 
+/* PARTNERS-BLOCK */
+.partners-block {
+  margin: 0;
+  padding: 80px 0;
+}
+
+.partners-list {
+  margin: 0;
+  margin-left: -70px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.partners-list-item {
+  margin-left: 70px;
+}
+
+.partners-logo-img {
+  display: flex;
+}
 
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -219,7 +243,23 @@ only screen and (                min-resolution: 2dppx) {
     text-align: center;
   }
   
+  
+  /* PARTNERS-BLOCK */
+  .partners-block {
+    padding: 60px 0;
+  }
+  
+  .partners-list {
+    margin-left: -30px;
+  }
+  
+  .partners-list-item {
+    margin-left: 30px;
+  }
+  
 }
+
+
 @media only screen and (max-width: 780px) {
   
   /* VIDEO-BLOCK */
@@ -231,9 +271,23 @@ only screen and (                min-resolution: 2dppx) {
     width: 650px;
     height: 390px;
   }
+  
+  /* PARTNERS-BLOCK */
+  .partners-block {
+    padding: 40px 0;
+  }
+  
+  .partners-list {
+    margin-bottom: -30px;
+  }
+  
+  .partners-list-item {
+    margin-bottom: 30px;
+  }
+  
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 590px) {
   
   /* HEADER */
   .header {
@@ -296,5 +350,42 @@ only screen and (                min-resolution: 2dppx) {
   .video-item video {
     width: 320px;
     height: 190px;
+  }
+  
+  
+  /* PARTNERS-BLOCK */
+  .partners-list-item {
+    display: flex;
+    margin-left: 25px;
+  }
+  
+  .Nestle-logo{
+    width: 84px;
+    height: 22px;
+  }
+  
+  .Apple-logo{
+    width: 19px;
+    height: 22px;
+  }
+  
+  .Beco-logo{
+    width: 37px;
+    height: 25px;
+  }
+  
+  .Amazon-logo{
+    width: 72px;
+    height: 22px;
+  }
+  
+  .Google-logo{
+    width: 66px;
+    height: 22px;
+  }
+  
+  .Walmart-logo{
+    width: 88px;
+    height: 22px;
   }
 }
