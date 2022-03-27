@@ -263,8 +263,63 @@ img {
   line-height: 32px;
   letter-spacing: 0em;
   text-align: center;
+  opacity: 0.5;
 }
 
+/* FEEDBACK-BLOCK */
+.feedback-block {
+  margin: 0;
+  padding: 50px 0;
+  background-color: #ece7fb;
+}
+
+.feedback-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-author-photo {
+  width: 353px;
+  height: 400px;
+  display: flex;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
+}
+
+.feedback-content {
+  width: 418px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-content-img {
+  width: 62px;
+  height: 45px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.feedback-text {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+}
+
+.feedback-author {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.5;
+}
 
 
 
@@ -318,6 +373,14 @@ only screen and (                min-resolution: 2dppx) {
     margin-left: 30px;
   }
   
+  
+  /* FEEDBACK-BLOCK */
+  .feedback-author-photo {
+    width: 300px;
+    height: 340px;
+    margin-right: 40px;
+  }
+  
 }
 
 
@@ -344,6 +407,24 @@ only screen and (                min-resolution: 2dppx) {
   
   .partners-list-item {
     margin-bottom: 30px;
+  }
+  
+  
+  /* FEEDBACK-BLOCK */
+  .feedback-block {
+    padding: 27px 0;
+  }
+  
+  .feedback-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-author-photo {
+    width: 260px;
+    height: 294px;
+    margin: 0;
+    margin-bottom: 60px;
   }
   
 }
@@ -448,5 +529,11 @@ only screen and (                min-resolution: 2dppx) {
   .Walmart-logo{
     width: 88px;
     height: 22px;
+  }
+
+
+  /* FEEDBACK-BLOCK */
+  .feedback-content {
+    width: 265px;
   }
 }
