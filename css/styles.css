@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   line-height: 178%;
   background-color: #fff;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 img {
@@ -43,13 +43,15 @@ img {
 }
 
 .button-blue {
+  line-height: 32px;
   color: #fff;
   background-color: #3366FF;
+  border-radius: 10px;
 }
 
 .button-orange {
   padding: 16px 50px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   background-color: #f8d57e;
 }
 
@@ -97,7 +99,7 @@ img {
 .singup {
   padding: 0;
   margin: 0;
-  color: #2D2D2D;
+  color: #2d2d2d;
   text-decoration: none;
 }
 
@@ -370,6 +372,146 @@ img {
 }
 
 
+/* FOOTER */
+.footer {
+  margin: 0;
+  padding: 70px 0;
+}
+
+.footer-top {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-top-left-column {
+  margin-right: auto;
+}
+
+.footer-logo-img {
+  display: flex;
+  margin: 0;
+  margin-bottom: 75px;
+  padding: 0;
+}
+
+.email {
+  margin-top: 12px;
+  padding: 11px 20px;
+  width: 320px;
+  height: 54px;
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+}
+
+.email::placeholder {
+  color: #2d2d2d;
+}
+
+.submit-button {
+  margin: 0;
+  margin-left: 20px;
+  padding: 11px 32px;
+  border: none;
+}
+
+.footer-top-right-column {
+  display: flex;
+}
+
+.footer-right-column-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.footer-column-button {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #2d2d2d;
+  border: none;
+  background-color: transparent;
+}
+
+.footer-link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-link-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #2d2d2d;
+  text-decoration: none;
+} 
+.footer-item-link:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copyright-symbol {
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.copyright-link {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.social-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+
+
 
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -457,6 +599,28 @@ only screen and (                min-resolution: 2dppx) {
     border-radius: 10px;
   }
   
+  
+  /* FOOTER */
+  .footer-right-column-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .footer-column-button {
+    white-space: nowrap;
+  }
+
+  .email {
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    margin: 0;
+    width: 320px;
+  }
+
+  .footer-logo-img {
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -503,6 +667,66 @@ only screen and (                min-resolution: 2dppx) {
     margin-bottom: 60px;
   }
   
+  
+  /* FOOTER */
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-top {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top-left-column {
+    margin-bottom: 40px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .footer-form br {
+    display: none;
+  }
+
+  .footer-item-link {
+    display: none;
+  }
+
+  .footer-top-right-column {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  .footer-right-column-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .footer-column-button {
+    margin: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-copyright {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright-link {
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 590px) {
